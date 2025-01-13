@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Iframe</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400vh;
+      background-color: #ffffff;
+    }
+
+    #iframe-container {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(0.8); /* ย่อขนาดลง 80% */
+      transform-origin: top left; /* ย่อจากมุมบนซ้าย */
+    }
+  </style>
+</head>
+<body>
+  <div id="iframe-container">
+    <iframe 
+      src="https://sthammath.github.io/vermil-blog/Wood-ring-blog.html" 
+      frameborder="0"
+      title="Wood Ring Blog">
+    </iframe>
+  </div>
+</body>
+</html>
